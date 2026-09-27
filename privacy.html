@@ -27,8 +27,8 @@ tracking, and no third-party SDKs that collect data. We do not have servers that
 receive your photos or skills.</p>
 
 <h2>Photos and generated guides</h2>
-<p>The guide uses Apple's Photos picker to read only the images you select, without requiring full-library access. Photos may download an original you already store in iCloud. Ace uses Vision text recognition and Apple's on-device model locally; it does not upload your images or recognized text to an AI service.</p>
-<p>Ace stores recognized text, a source preview, and generated explanations on your device. You can edit or remove explanations, or delete a saved source from Saved screenshots. Deleting it removes its saved text, preview, and lessons from Ace; original photos remain unchanged. Earlier scanning features and the native Mac preview read only the Photos access you grant.</p>
+<p>After you connect Photos, Ace automatically discovers screenshots available under your Photos permission. Full access enables library-wide discovery; limited access restricts what Ace can find. Automatic discovery reads local originals and does not download cloud-only images. Ace uses Vision text recognition and Apple's on-device model locally; it does not upload your images or recognized text to an AI service.</p>
+<p>Ace stores recognized text, a source preview, and generated explanations on your device. You can edit or remove explanations, or delete a saved source from Saved screenshots. Deleting it removes its saved text, preview, and lessons from Ace; original photos remain unchanged. Ace stores a local progress ledger so preparation can resume and sources you remove are not automatically reimported. You can pause automatic discovery in About Ace. Preparation runs while the app is active and resumes when you return.</p>
 <h2>Optional cloud helper</h2>
 <p>Some iPhones without Apple Intelligence can use an optional cloud helper. If —
 and only if — that option is enabled, Ace reads your screenshot's text on
