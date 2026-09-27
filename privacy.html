@@ -27,7 +27,7 @@ tracking, and no third-party SDKs that collect data. We do not have servers that
 receive your photos or skills.</p>
 
 <h2>Photos and generated guides</h2>
-<p>The iPhone guide uses Apple's Photos picker to read only the images you select, without requiring full-library access. Photos may download an original you already store in iCloud. Ace uses Vision text recognition and Apple's on-device model locally; it does not upload your images or recognized text to an AI service.</p>
+<p>The guide uses Apple's Photos picker to read only the images you select, without requiring full-library access. Photos may download an original you already store in iCloud. Ace uses Vision text recognition and Apple's on-device model locally; it does not upload your images or recognized text to an AI service.</p>
 <p>Ace stores recognized text, a source preview, and generated explanations on your device. You can edit or remove explanations, or delete a saved source from Saved screenshots. Deleting it removes its saved text, preview, and lessons from Ace; original photos remain unchanged. Earlier scanning features and the native Mac preview read only the Photos access you grant.</p>
 <h2>Optional cloud helper</h2>
 <p>Some iPhones without Apple Intelligence can use an optional cloud helper. If —
@@ -36,11 +36,9 @@ device and sends <strong>just that text</strong> (never the image) to the helper
 to craft a skill. The current App Store build does not enable any cloud helper;
 everything runs on device.</p>
 
-<h2>Sharing to other apps</h2>
-<p>When you tap “Open in Claude / ChatGPT / Gemini,” Ace copies the skill
-text to your clipboard and opens that app or website. From that point, the other
-app's own privacy policy applies. Ace does not send anything on its own.</p>
-
+<h2>Learning in another AI app</h2>
+<p>When you tap “Learn this,” Ace prepares a prompt on-device from the selected idea and its supporting quote, copies it to the local clipboard, and opens ChatGPT or Claude (or its website). The navigation URL contains no screenshot text. Ace does not automatically paste or submit a message. You can preview or edit the prompt first. When you choose to paste and send, the destination's privacy policy applies.</p>
+<p>The handoff disables Universal Clipboard transfer. Other local apps with clipboard access may still read copied content. iPhone clipboard exports expire after ten minutes. iPhone and Mac libraries are separate; this release adds no cloud synchronization.</p>
 <h2>Children</h2>
 <p>Ace is a general-audience productivity tool and is not directed at
 children. It collects no personal information from anyone.</p>
